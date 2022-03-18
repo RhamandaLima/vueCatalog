@@ -1,6 +1,6 @@
 <template>
     <v-container class="catalogo-filmes">
-        <h3 class="text-center ma-4">CATÁLOGO DE FILMES</h3>
+        <h2 class="text-center ma-4">CATÁLOGO DE FILMES</h2>
         <v-card
             max-width="300"
             class="grey lighten-5 mx-auto ma-3"
@@ -14,7 +14,7 @@
             </v-img>
 
             <v-list two-line class="grey lighten-5">
-            <v-list-item>  
+            <v-list-item class="color-letter">  
             <v-list-item-title class="pl-2"> {{ index + 1 }} {{ filme.Title }}</v-list-item-title>
             <v-list-item-subtitle class="text-right">{{ filme.Year }} </v-list-item-subtitle>
             </v-list-item>
@@ -42,4 +42,4 @@
         console.log(this.listaDeFilmes);
       }
   }
-  </script>
+</script>

@@ -46,12 +46,14 @@
           </v-list-item>
           </router-link>
 
+          <router-link to="/sugestao">
             <v-list-item>
                 <v-list-item-icon>
                   <v-icon color="blue-grey darken-4">mdi-movie-search</v-icon>
                 </v-list-item-icon>
-                <v-list-item-title>Sugestões do dia</v-list-item-title>
+                <v-list-item-title>Sugestão do dia</v-list-item-title>
             </v-list-item>
+            </router-link>
             
             <v-list-item>
                 <v-list-item-icon>
