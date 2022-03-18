@@ -1,23 +1,24 @@
 <template>
     <v-container class="catalogo-filmes">
-        <h2 class="text-center ma-4">CATÁLOGO DE FILMES</h2>
+        <h2 class="text-center ma-4">FILMES ASSISTIDOS</h2>
+        <h3 class="text-center ma-4">Quantidade de filmes assistidos: {{contador}}</h3>
         <v-card
             max-width="300px"
             class="grey lighten-5 mx-auto ma-3"
             v-for="(filme, index) of listaDeFilmes" :key="filme.id"
         >
-            <v-img
-                height="300px"
-                dark
-                :src="filme.Poster" :alt="filme.Title"
-            >
-            </v-img>
-
             <v-list two-line class="grey lighten-5">
             <v-list-item class="color-letter">  
-            <v-list-item-title class="pl-2"> {{ index + 1 }} {{ filme.Title }}</v-list-item-title>
+            <v-list-item-title class="text-left"> {{ index + 1 }} {{ filme.Title }}</v-list-item-title>
             <v-list-item-subtitle class="text-right">{{ filme.Year }} </v-list-item-subtitle>
             </v-list-item>
+            <v-btn
+                width="150px"
+                color="deep-orange accent-4"
+                @click="favoritar"
+                >
+                Já assisti!
+            </v-btn>
             </v-list>
 
             <v-spacer></v-spacer>
@@ -27,10 +28,16 @@
 
 <script>
   export default {
-    name: 'CatalogoFilmes',
+    name: 'AssistidosFilmes',
     data() {
       return {
-        listaDeFilmes: []
+        listaDeFilmes: [],
+        contador: 0,
+      }
+    },
+    methods: {
+      favoritar() {
+        this.contador +=1;
       }
     },
     created() {
@@ -43,3 +50,11 @@
       }
   }
 </script>
+
+<style scoped>
+
+.catalogo-filmes {
+  text-align: center;     
+}
+
+</style>

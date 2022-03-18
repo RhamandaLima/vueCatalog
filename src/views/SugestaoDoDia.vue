@@ -10,7 +10,7 @@
 
         <router-link to="/resultado">
             <v-btn
-            class="deep-orange darken-4"
+            class="deep-orange accent-4"
             elevation="4"
             large
             center  
@@ -31,13 +31,18 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     .container-sug {
-        text-align: center;
+        text-align: center;       
+    }
+
+    .v-btn a {
+        text-decoration: none;
+       
     }
 
     .v-btn {
         border-radius: 25px;
-        color: #fdfdfd;
+        text-decoration: none;
     }
 </style>

@@ -32,6 +32,10 @@ export default {
   background-color: #EEEEEE;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*nav {
   padding: 30px;
 

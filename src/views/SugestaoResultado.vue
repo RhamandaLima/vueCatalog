@@ -17,7 +17,7 @@
 
             <v-list two-line class="grey lighten-5">
             <v-list-item class="color-letter">  
-            <v-list-item-title class="pl-2">{{ filmeSugerido.Title }}</v-list-item-title>
+            <v-list-item-title class="text-left">{{ filmeSugerido.Title }}</v-list-item-title>
             <v-list-item-subtitle class="text-right">{{ filmeSugerido.Year }} </v-list-item-subtitle>
             </v-list-item>
             </v-list>
@@ -54,12 +54,15 @@ export default {
 </script>
 
 <style>
+    .container{
+      text-decoration: none;
+    }
     .container-sug {
-        text-align: center;
+      text-align: center;
+      
     }
 
     .v-btn {
-        border-radius: 25px;
-        color: #fdfdfd;
+      border-radius: 25px;
     }
 </style>

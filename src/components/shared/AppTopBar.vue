@@ -53,14 +53,16 @@
                 </v-list-item-icon>
                 <v-list-item-title>Sugestão do dia</v-list-item-title>
             </v-list-item>
-            </router-link>
-            
+          </router-link>
+
+          <router-link to="/login">
             <v-list-item>
                 <v-list-item-icon>
-                    <v-icon color="blue-grey darken-4">mdi-movie-check</v-icon>
+                    <v-icon color="blue-grey darken-4">mdi-account</v-icon>
                 </v-list-item-icon>
-                <v-list-item-title>Assistidos</v-list-item-title>
+                <v-list-item-title>Login</v-list-item-title>
             </v-list-item>
+          </router-link>
 
             <v-list-item>
                 <v-list-item-icon>
@@ -80,7 +82,7 @@
     data: () => ({
       drawer: false,
       group: null,
-    }),
+    })
   }
 </script>
 
