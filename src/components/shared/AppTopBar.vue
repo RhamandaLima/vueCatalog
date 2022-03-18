@@ -79,7 +79,6 @@
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap');
 
 .app-top-bar {
   font-family: 'Oswald', sans-serif;
@@ -87,7 +86,7 @@
 
 h1 {
   font-size: 22px;
-  padding-left: 180px;
+  padding-left: 150px;
 }
 
 .nav {
