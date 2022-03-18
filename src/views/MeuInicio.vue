@@ -4,8 +4,9 @@
             VUECATALOG
         </h2>
         <v-img 
-            class="inicio-imagem mb-5"
-            src="https://blush.design/api/download?shareUri=UHBC5VMqRZ85kfbW&c=Base_0%7Ee9553c_Hair_0%7E3f88eb_Skin_0%7Ebb6162&w=800&h=800&fm=png" alt="">
+            class="inicio-imagem mb-3"
+            src="../assets/movie.png"
+            >
         </v-img>
         <p>Em busca de conforto e de um momento de lazer? Aqui você encontra uma variedade de filmes.</p>
     </v-container>
