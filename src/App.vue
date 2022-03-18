@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <AppTopBar />
+    <AppFooter />
     
     <v-main>
       <router-view/>
@@ -10,11 +11,13 @@
 
 <script>
 import AppTopBar from './components/shared/AppTopBar.vue'
+import AppFooter from './components/shared/AppFooter.vue'
 
 export default {
   name:'App',
   components: {
-    AppTopBar
+    AppTopBar,
+    AppFooter
   }
 };
 </script>
