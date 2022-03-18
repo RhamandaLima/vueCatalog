@@ -28,19 +28,23 @@
           active-class="deep-orange--text text--darken-4"
           
         >
+          <router-link to="/">
           <v-list-item>
             <v-list-item-icon >
               <v-icon color="blue-grey darken-4">mdi-home</v-icon>
             </v-list-item-icon>
             <v-list-item-title>Início</v-list-item-title>
           </v-list-item>
+          </router-link>
 
+          <router-link to="/catalogo">
           <v-list-item>
             <v-list-item-icon>
               <v-icon color="blue-grey darken-4">mdi-movie-open-play</v-icon>
             </v-list-item-icon>
             <v-list-item-title>Catálogo de filmes</v-list-item-title>
           </v-list-item>
+          </router-link>
 
             <v-list-item>
                 <v-list-item-icon>
@@ -82,6 +86,11 @@
 
 .app-top-bar {
   font-family: 'Oswald', sans-serif;
+  text-transform: none;
+}
+
+.app-top-bar a {
+  text-decoration: none;
 }
 
 h1 {
