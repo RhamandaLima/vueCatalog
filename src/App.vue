@@ -1,23 +1,30 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
-  </div>
+  <v-app>
+    <AppTopBar />
+    
+    <v-main>
+      <router-view/>
+    </v-main>
+  </v-app>
 </template>
 
-<style lang="scss">
+<script>
+import AppTopBar from './components/shared/AppTopBar.vue'
+
+export default {
+  name:'App',
+  components: {
+    AppTopBar
+  }
+};
+</script>
+
+<style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 
-nav {
+/*nav {
   padding: 30px;
 
   a {
@@ -28,5 +35,5 @@ nav {
       color: #42b983;
     }
   }
-}
+} */
 </style>

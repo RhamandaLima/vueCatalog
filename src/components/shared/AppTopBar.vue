@@ -1,0 +1,97 @@
+<template>
+  <div class="app-top-bar">
+
+    <v-app-bar
+      color="blue-grey darken-4"
+      dark
+      text-align="end"
+    >
+        <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
+
+        <v-toolbar-title>
+            <h1>VUECATALOG</h1>
+        </v-toolbar-title>
+    </v-app-bar>
+
+    <v-navigation-drawer
+      v-model="drawer"
+      absolute
+      temporary
+      class="grey lighten-3"
+    >
+      <v-list 
+        nav 
+        
+      >
+        <v-list-item-group
+          v-model="group"
+          active-class="deep-orange--text text--darken-4"
+          
+        >
+          <v-list-item>
+            <v-list-item-icon >
+              <v-icon color="blue-grey darken-4">mdi-home</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Início</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon color="blue-grey darken-4">mdi-movie-open-play</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Catálogo de filmes</v-list-item-title>
+          </v-list-item>
+
+            <v-list-item>
+                <v-list-item-icon>
+                  <v-icon color="blue-grey darken-4">mdi-movie-search</v-icon>
+                </v-list-item-icon>
+                <v-list-item-title>Sugestões do dia</v-list-item-title>
+            </v-list-item>
+            
+            <v-list-item>
+                <v-list-item-icon>
+                    <v-icon color="blue-grey darken-4">mdi-movie-check</v-icon>
+                </v-list-item-icon>
+                <v-list-item-title>Assistidos</v-list-item-title>
+            </v-list-item>
+
+            <v-list-item>
+                <v-list-item-icon>
+                    <v-icon color="blue-grey darken-4">mdi-account-group</v-icon>
+                </v-list-item-icon>
+                <v-list-item-title>Quem somos</v-list-item-title>
+            </v-list-item>
+
+        </v-list-item-group>
+      </v-list>
+    </v-navigation-drawer>
+  </div>
+</template>
+
+<script>
+  export default {
+    data: () => ({
+      drawer: false,
+      group: null,
+    }),
+  }
+</script>
+
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap');
+
+.app-top-bar {
+  font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+  font-size: 22px;
+  padding-left: 180px;
+}
+
+.nav {
+  background-color: grey;
+}
+
+</style>
