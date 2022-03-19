@@ -8,9 +8,9 @@
       lazy-validation
     >
 
-      <v-text-field v-model="name" label="Nome" :rules="nameRules" required > </v-text-field> 
+      <v-text-field v-model="name" label="Nome" :rules="nameRules" type="text" required > </v-text-field> 
 
-      <v-text-field v-model="email" label="Email" :rules="emailRules" required > </v-text-field> 
+      <v-text-field v-model="email" label="Email" :rules="emailRules" type="mail" required > </v-text-field> 
 
       <v-text-field v-model="password" label="Senha" :rules="passwordRules" type="password" required > </v-text-field> 
 
