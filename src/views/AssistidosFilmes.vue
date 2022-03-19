@@ -1,10 +1,6 @@
 <template>
     <v-container class="catalogo-filmes">
-<<<<<<< HEAD
         <h2 class="text-center ma-4">FILMES QUE EU JÁ VI</h2>
-=======
-        <h2 class="text-center ma-4">FILMES ASSISTIDOS</h2>
->>>>>>> d15703d936a4088970be2e53748cdd9f4e572bbd
         <h3 class="text-center ma-4">Quantidade de filmes assistidos: {{contador}}</h3>
         <v-card
             max-width="300px"
