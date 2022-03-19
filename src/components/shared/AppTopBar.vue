@@ -64,13 +64,15 @@
             </v-list-item>
           </router-link>
 
+          <router-link to="/apresentacao">
             <v-list-item>
                 <v-list-item-icon>
                     <v-icon color="blue-grey darken-4">mdi-account-group</v-icon>
                 </v-list-item-icon>
                 <v-list-item-title>Quem somos</v-list-item-title>
             </v-list-item>
-
+          </router-link>
+          
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>

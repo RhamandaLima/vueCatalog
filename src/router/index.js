@@ -8,6 +8,7 @@ import LoginUsuario from '../views/LoginUsuario'
 import CadastroUsuario from '../views/CadastroUsuario'
 import ValidacaoCadastro from '../views/ValidacaoCadastro'
 import AssistidosFilmes from '../views/AssistidosFilmes'
+import QuemSomos from '../views/QuemSomos'
 
 
 Vue.use(VueRouter)
@@ -52,7 +53,13 @@ const routes = [
     path: '/assistidos',
     name: 'AssistidosFilmes',
     component: AssistidosFilmes
+  },
+  {
+    path: '/apresentacao',
+    name: 'QuemSomos',
+    component: QuemSomos
   }
+
 ]
 
 const router = new VueRouter({
